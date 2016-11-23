@@ -59,7 +59,7 @@ void Catapult::Shoot()
 
 	fire = !fire;
 }
-
+//If it is true pish pish turns on
 void Catapult::Retract()
 {
 	/*
@@ -71,14 +71,14 @@ void Catapult::Retract()
 	//catapultRetractor->Set(1.000);
 
 }
-
+//The catapult returns back
 void Catapult::STOP()
 {
 	fire = false;
 	catSol->Set(fire);
 	catapultRetractor->Set(0);	//sets catapult motor to 0 to stop it
 }
-
+//Catapult returns back
 double Catapult::GetAverageVoltage()
 {
 	return catPot->GetAverageVoltage();	//gets voltage to determine slack and tight
